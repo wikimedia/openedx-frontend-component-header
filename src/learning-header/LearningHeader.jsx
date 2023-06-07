@@ -7,6 +7,7 @@ import { AppContext } from '@edx/frontend-platform/react';
 import AnonymousUserMenu from './AnonymousUserMenu';
 import AuthenticatedUserDropdown from './AuthenticatedUserDropdown';
 import messages from './messages';
+import Navlinks from '../nav-links/NavLinks';
 
 const LinkedLogo = ({
   href,
@@ -44,10 +45,11 @@ const LearningHeader = ({
       <a className="sr-only sr-only-focusable" href="#main-content">{intl.formatMessage(messages.skipNavLink)}</a>
       <div className="container-xl py-2 d-flex align-items-center">
         {headerLogo}
-        <div className="flex-grow-1 course-title-lockup" style={{ lineHeight: 1 }}>
+        <div className="course-title-lockup" style={{ lineHeight: 1 }}>
           <span className="d-block small m-0">{courseOrg} {courseNumber}</span>
           <span className="d-block m-0 font-weight-bold course-title">{courseTitle}</span>
         </div>
+        <Navlinks/>
         {showUserDropdown && authenticatedUser && (
           <AuthenticatedUserDropdown
             username={authenticatedUser.username}
