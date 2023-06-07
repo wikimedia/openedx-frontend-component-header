@@ -1,6 +1,6 @@
 {
-  "name": "@edx/frontend-component-header",
-  "version": "1.0.0-semantically-released",
+  "name": "@edly-io/frontend-component-header",
+  "version": "1.0.0",
   "description": "The standard header for Open edX",
   "main": "dist/index.js",
   "publishConfig": {
@@ -71,5 +71,13 @@
     "prop-types": "^15.5.10",
     "react": "^16.9.0 || ^17.0.0",
     "react-dom": "^16.9.0 || ^17.0.0"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "wikimedia",
+    "edly",
+    "header"
+  ]
 }
