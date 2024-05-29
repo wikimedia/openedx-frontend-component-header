@@ -3,3 +3,11 @@
         margin-left: $baseline * 2;
     }
 }
+
+.course-title-lockup {
+    span {
+        @include media-down(sm) {
+            display: none !important;
+        }
+    }
+}

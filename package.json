@@ -1,6 +1,6 @@
 {
   "name": "@edly-io/wikimedia-frontend-component-header",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The standard header for Open edX",
   "main": "dist/index.js",
   "publishConfig": {
